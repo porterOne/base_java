@@ -9,6 +9,7 @@ public class AlgorithmTest06 {
         HashMap<Object, Object> objectObjectHashMap = new HashMap<>();
 
         System.out.print("version one");
+        System.out.print("version two");
 
     }
 }
