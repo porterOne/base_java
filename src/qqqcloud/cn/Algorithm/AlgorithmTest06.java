@@ -10,7 +10,7 @@ public class AlgorithmTest06 {
 
         System.out.print("version one");
         System.out.print("version two");
-        System.out.print("version hot-fix");
+        System.out.print("version master");
 
     }
 }
