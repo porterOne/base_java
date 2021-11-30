@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class hacker_03_Generic {
 
     public static void main(String[] args) {
-
+//        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
 //        hacker_03_GenericClass<String> str = new hacker_03_GenericClass<>();
 //        str.setElement("123");
 //        System.out.println(str.getElement());
