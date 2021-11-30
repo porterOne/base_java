@@ -3,6 +3,7 @@ package qqqcloud.cn.collections.Generic;
 import jdk.nashorn.internal.ir.CallNode;
 
 import java.lang.reflect.Array;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 
 public class hacker_03_Generic {
@@ -32,14 +33,23 @@ public class hacker_03_Generic {
         strings.add("1");
         ArrayList<Integer> integers = new ArrayList<>();
         integers.add(1);
+        ArrayList<BigDecimal> bigDecimals = new ArrayList<>();
+        BigDecimal bigDecimal = new BigDecimal("12");
+        bigDecimals.add(bigDecimal);
 
-//        printElement(strings);
-        printElement(integers);
+        printElement2(bigDecimals);
+        printElement2(integers);
 
     }
 
     // 泛型通配符上限 extend  泛型通配符下限 super
     public static void printElement(ArrayList<? super Integer> lists){
+        for (int i = 0; i < lists.size(); i++) {
+            System.out.println(lists.get(i));
+        }
+
+    }
+    public static void printElement2(ArrayList<? extends Number> lists){
         for (int i = 0; i < lists.size(); i++) {
             System.out.println(lists.get(i));
         }
