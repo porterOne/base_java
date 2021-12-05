@@ -1,4 +1,4 @@
-package qqqcloud.cn.hk01mutilandinterface;
+package qqqcloud.cn.hkMutilandinterface;
 
 public interface USB {
 

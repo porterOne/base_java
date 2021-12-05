@@ -1,4 +1,4 @@
-package qqqcloud.cn.hk01mutilandinterface;
+package qqqcloud.cn.hkMutilandinterface;
 
 // 鼠标就是一个USB设备
 public class Mouse implements USB {

@@ -1,4 +1,4 @@
-package qqqcloud.cn.hk01mutilandinterface;
+package qqqcloud.cn.hkMutilandinterface;
 
 // 键盘就是一个USB设备
 public class Keyboard implements USB {
