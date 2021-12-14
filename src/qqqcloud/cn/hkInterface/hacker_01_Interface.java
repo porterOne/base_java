@@ -6,7 +6,7 @@ public interface hacker_01_Interface {
     void test02();
     void test03();
 
-    // 接口默认方法，解决接口升级问题
+    // 接口默认方法，解决接口升级问题 1.8后有
     default void defalutTest04(){
         System.out.println("default");
     }
