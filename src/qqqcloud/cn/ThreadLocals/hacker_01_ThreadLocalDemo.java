@@ -23,12 +23,12 @@ public class hacker_01_ThreadLocalDemo {
                 // get user data
                 User getUser=th.get();
                 // set threadLocal object null
-                th=null;
+//                th=null;
                 // in order to remove value refrence 
-                if (th.get()==null){
+//                if (th.get()==null){
                     // clean key is null [entry]
-                    th.remove();
-                }
+//                    th.remove();
+//                }
 
                 System.out.println("第一个线程："+getUser);
 
@@ -36,7 +36,7 @@ public class hacker_01_ThreadLocalDemo {
         }).start();
 
         // wait second thread run
-        TimeUnit.MILLISECONDS.sleep(1000);
+//        TimeUnit.MILLISECONDS.sleep(1000);
 
         // 第二个线程
         new Thread(new Runnable() {
