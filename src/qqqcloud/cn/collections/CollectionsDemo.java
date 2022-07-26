@@ -1,6 +1,6 @@
 package qqqcloud.cn.collections;
 
-import org.junit.Test;
+//import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -46,7 +46,7 @@ public class CollectionsDemo {
     }
 
 //     重复值删除
-    @Test
+//    @Test
     public static void listTest1 (){
         ArrayList<String> list = new ArrayList<String>();
 
