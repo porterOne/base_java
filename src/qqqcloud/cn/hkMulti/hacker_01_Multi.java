@@ -17,12 +17,12 @@ public class hacker_01_Multi {
      * 利用多态的向上转型，向下转型，实现参数不限制
      * @param animal
      */
-    public static void getPat2(Animal animal){
+    public static <T> T  getPat2(Animal animal){
 
-        if (animal instanceof Dog) ((Dog) animal).watchHourse();
-        else if(animal instanceof Cat) ((Cat) animal).catchMouse();
+        if (animal instanceof Dog) return (T) ((Dog) animal).watchHourse();
+        else if(animal instanceof Cat) return (T)((Cat) animal).catchMouse();
         else{
-            System.out.println("暂未使用");
+            return null;
         }
     }
 
@@ -32,7 +32,7 @@ public class hacker_01_Multi {
         getPat(1);
         getPat(2.0);
 
-        getPat2(new Dog());
-        getPat2(new Cat());
+        System.out.println (getPat2(new Dog()).toString());
+        System.out.println (getPat2(new Cat()).toString());
     }
 }
