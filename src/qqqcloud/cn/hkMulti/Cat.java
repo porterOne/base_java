@@ -2,7 +2,7 @@ package qqqcloud.cn.hkMulti;
 
 public class Cat extends Animal{
 
-    public void catchMouse(){
-        System.out.println("喵喵喵");
+    public String catchMouse(){
+        return ("喵喵喵");
     }
 }
